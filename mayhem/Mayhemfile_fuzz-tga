@@ -1,0 +1,10 @@
+project: savantenvs/swayimg
+target: fuzz-tga
+cmds:
+  - cmd: /mayhem/fuzz_tga
+    libfuzzer: true
+    timeout: 5
+    max_length: 2097152
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-tga/testsuite

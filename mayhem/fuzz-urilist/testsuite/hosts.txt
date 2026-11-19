@@ -1,0 +1,8 @@
+file://exec://true
+file://exec%3A%2F%2Ftrue
+file://stdin://
+file://relative/name
+file://otherhost/a/1
+file://localhostile/a/2
+file://localhost/a/3
+file:///a/4

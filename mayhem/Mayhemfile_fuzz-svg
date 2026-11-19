@@ -1,0 +1,10 @@
+project: savantenvs/swayimg
+target: fuzz-svg
+cmds:
+  - cmd: /mayhem/fuzz_svg
+    libfuzzer: true
+    timeout: 5
+    max_length: 2097152
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-svg/testsuite
